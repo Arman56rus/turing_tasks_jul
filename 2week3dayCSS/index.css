@@ -1,0 +1,25 @@
+p {
+    background: green;
+}
+.container {
+    width: 200px;
+    /*height: 80%;*/
+    text-align: left;
+    background-color: blue;
+}
+.paragraph {
+    text-align: right;
+    margin-right: 30px;
+}
+.form_container{
+    background-color: red;
+    /*height: 100px;*/
+}
+.border_input {
+    width: 8em;
+}
+button{
+    border-width: 10px;
+    border-color: blue;
+    border-style: dashed;
+}
