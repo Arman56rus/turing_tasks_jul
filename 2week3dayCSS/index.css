@@ -6,10 +6,13 @@ p {
     /*height: 80%;*/
     text-align: left;
     background-color: blue;
+    font-size: xx-large;
+    font-weight: bold;
 }
 .paragraph {
     text-align: right;
     margin-right: 30px;
+    background: green;
 }
 .form_container{
     background-color: red;
@@ -25,4 +28,13 @@ button{
 }
 #fortextarea{
     resize: none;
+}
+#stylefont{
+    font-family: Arial;
+    }
+.HTMLHead{
+    font-weight: bold;
+}
+.HTMLitalics{
+    font-style: italic;
 }
