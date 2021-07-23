@@ -69,7 +69,7 @@ sup{
     font-style: normal;
     font-size: small;
 }
-div{
+.text{
     width: 100%;
     background-color: #993430;
     height: 70px;
@@ -93,4 +93,24 @@ div{
     font-size: xx-large;
     color: aqua;
     font-style: italic;
+}
+#circle1{
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    background: darkseagreen;
+    border: 30px solid green;
+    border-bottom-color: red;
+    line-height: 50px;
+    text-align: center;
+}
+#circletext, #circlepercent {
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+}
+#circletext1, #circlepercent1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
 }
