@@ -310,7 +310,7 @@ li.point > a{
     color: black;
 }
 li.point{
-    float: left;
+    display: inline-block;
     font-size: x-large;
     padding: 10px;
     background: linear-gradient(180deg, rgb(254, 255, 252), rgb(157, 189, 111) 100%);
