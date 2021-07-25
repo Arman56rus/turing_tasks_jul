@@ -200,7 +200,6 @@ input[type="email"],[type="password"], [type="text"]{
 }
 .menu{
     display: flex;
-    text-decoration-
 }
 .menu li{
     width: 100px;
@@ -219,7 +218,103 @@ input[type="email"],[type="password"], [type="text"]{
 .menu li:hover ul {
     display: block;
 }
-
-
-
-
+.list > a:hover{
+    background: #0289c7;
+    color: white;
+    display: block;
+}
+.list1 > a:hover{
+    background: blue;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+.list2 > a{
+    background: black;
+    color: white;
+    display: block;
+    text-decoration: none;
+    border-radius: 25%;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 5px;
+}
+#main{
+    background: darkblue;
+    color: white;
+}
+ul.menu1 {
+    display: block;
+}
+.square{
+    width: 200px;
+    height: 100px;
+    background: white;
+    border: solid 1px black;
+}
+.circle{
+    width: 65px;
+    height: 65px;
+    position: relative;
+    color: red;
+    left: 64px;
+    top: 18px;
+    background: #ff3207;
+    border-radius: 50%;
+}
+.flag{
+    width: 200px;
+    height: 100px;
+    border: solid 1px black;
+}
+.gradient{
+    height: 100%;
+    background: linear-gradient(to top, red 33.3%,blue 33.3%,blue 66.6%,white 66.6%);
+}
+.item{
+    height: 225px;
+    width: 650px;
+    box-shadow: 4px 4px 9px 3px rgba(5, 11, 15, 0.99);
+}
+#menuitem{
+    list-style: none;
+    padding: 20px;
+}
+#menuitem1{
+    padding: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+#button{
+    height: 100px;
+    width: 200px;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 10%;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 1) inset;
+}
+.square1 {
+    height: 100px;
+    width: 100px;
+    border: 10px solid;
+    border-image-source: linear-gradient(to right, #94525c, #14aad7);
+    border-image-slice: 1;
+}
+.main{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li.point > a{
+    text-decoration: none;
+    color: black;
+}
+li.point{
+    float: left;
+    font-size: x-large;
+    padding: 10px;
+    background: linear-gradient(180deg, rgb(254, 255, 252), rgb(157, 189, 111) 100%);
+    box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 1), -2px 0px 0px 0px rgba(255, 255, 255, 1) inset;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
