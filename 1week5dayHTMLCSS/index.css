@@ -193,58 +193,10 @@ input[type="email"],[type="password"], [type="text"]{
     height: 30px;
     border-radius: 10%;
 }
-#button2{
+#button2 {
     border-color: lightgray;
     height: 30px;
     border-radius: 10%;
-}
-.menu{
-    display: flex;
-}
-.menu li{
-    width: 100px;
-    list-style: none;
-    background: white;
-    position: relative;
-}
-.menu a{
-    color: blue;
-    line-height: 40px;
-}
-.menu ul{
-    display: none;
-    padding:0;
-}
-.menu li:hover ul {
-    display: block;
-}
-.list > a:hover{
-    background: #0289c7;
-    color: white;
-    display: block;
-}
-.list1 > a:hover{
-    background: blue;
-    color: white;
-    display: block;
-    text-decoration: none;
-}
-.list2 > a{
-    background: black;
-    color: white;
-    display: block;
-    text-decoration: none;
-    border-radius: 25%;
-    text-align: center;
-    height: 40px;
-    margin-bottom: 5px;
-}
-#main{
-    background: darkblue;
-    color: white;
-}
-ul.menu1 {
-    display: block;
 }
 .square{
     width: 200px;
@@ -432,4 +384,124 @@ input[type="radio"]:checked+i:before{
     font-family: "Uni Sans";
     font-size: large;
     color: darkblue;
+}
+.menu{
+    display: inline-block;
+    height: 20em;
+}
+.list > a{
+    text-decoration: none;
+    font-weight: lighter;
+    font-style: normal;
+    color: blue;
+    font-size: 20px;
+}
+.list{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu1 > a{
+    color: blue;
+    font-size: large;
+    font-weight: normal;
+    font-style: normal;
+}
+.menu2{
+    display: none;
+}
+.menu:hover .menu2{
+    display: block;
+}
+.menu:hover .menu2 {
+    box-shadow: 1px 2px 23px 2px rgba(0, 0, 0, 0.81);
+    position: relative;
+    height: 160px;
+    width: 150px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.menu:hover .list:hover>a {
+    color: white;
+}
+.menu:hover .menu1 {
+    box-shadow: 1px 2px 23px 2px rgba(0, 0, 0, 0.81);
+}
+.menu:hover .menu1>a {
+    color: black;
+    text-decoration: none;
+}
+.menu:hover .list:hover {
+    background-color: lightblue;
+}
+.menu1{
+    width: 40px;
+    padding: 10px;
+    border-top-right-radius: 10% ;
+    border-top-left-radius: 10% ;
+    height: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.menutwo{
+    display: inline-block;
+    height: 20em;
+}
+.listtwo > a{
+    font-weight: lighter;
+    font-style: normal;
+    color: blue;
+    font-size: 20px;
+}
+.listtwo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu1two > a{
+    color: blue;
+    font-size: large;
+    font-weight: normal;
+    font-style: normal;
+}
+.menu2two{
+    display: none;
+}
+.menutwo:hover .menu2two{
+    display: block;
+}
+.menutwo:hover .menu2two {
+    box-shadow: 1px 2px 23px 2px rgba(0, 0, 0, 0.81);
+    position: relative;
+    height: 160px;
+    width: 150px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.menutwo:hover .listtwo:hover>a {
+    color: white;
+    text-decoration: none;
+}
+.menutwo:hover .menu1two {
+    box-shadow: 1px 2px 23px 2px rgba(0, 0, 0, 0.81);
+}
+.menutwo:hover .menu1two>a {
+    color: black;
+    text-decoration: none;
+}
+.menutwo:hover .listtwo:hover {
+    background-color: blue;
+}
+.menu1two{
+    width: 60px;
+    padding: 10px;
+    border-top-right-radius: 10% ;
+    border-top-left-radius: 10% ;
+    height: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
