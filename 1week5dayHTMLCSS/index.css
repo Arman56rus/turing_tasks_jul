@@ -300,7 +300,7 @@ ul.menu1 {
     border-image-source: linear-gradient(to right, #94525c, #14aad7);
     border-image-slice: 1;
 }
-.main{
+.main, .main1{
     list-style: none;
     margin: 0;
     padding: 0;
@@ -314,7 +314,43 @@ li.point{
     font-size: x-large;
     padding: 10px;
     background: linear-gradient(180deg, rgb(254, 255, 252), rgb(157, 189, 111) 100%);
+    box-shadow: 2px 0px 0px 0px  rgba(0, 0, 0, 1), -2px 0px 0px 0px rgba(255, 255, 255, 1) inset;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.point1 > a, .point2 > a, .point3 > a, .point4  > a{
+    text-decoration: none;
+    color: black;
+}
+.point1, .point2, .point3, .point4 {
+    display: inline-block;
+    font-size: large;
+    background: linear-gradient(180deg, rgb(254, 255, 252), rgb(157, 189, 111) 100%);
     box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 1), -2px 0px 0px 0px rgba(255, 255, 255, 1) inset;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
+    width: 3em;
+    height: 1.5em;
+    text-align: center;
+    margin-top: 7px;
+    padding-top: 7px;
+}
+.point1>a{
+
+}
+.point1{
+    width: 60px;
+    height: 40px;
+    z-index: 4;
+}
+.point2>a{
+    position: relative;
+    left: 5px;
+}
+.point2{
+    width: 70px;
+    height: 40px;
+    position: relative;
+    left: -22px;
+    z-index: -3;
 }
