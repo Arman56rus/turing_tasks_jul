@@ -114,21 +114,21 @@ sup{
     font-weight: bold;
     color: red;
 }
-form > h1{
+.form1 > h1{
     font-weight: lighter;
     font-size: 27px;
     padding-left: 12px;
     margin-bottom: 5px;
     padding-top: 15px;
 }
-form > hr{
+.form1 > hr{
     margin-left: 6px;
     margin-right: 6px;
 }
-form{
+.form1{
     font-family: Tahoma;
     background: #e0e2e3;
-    height: 550px;
+    height: 630px;
     width: 650px;
     border-radius: 1%;
 }
@@ -193,58 +193,10 @@ input[type="email"],[type="password"], [type="text"]{
     height: 30px;
     border-radius: 10%;
 }
-#button2{
+#button2 {
     border-color: lightgray;
     height: 30px;
     border-radius: 10%;
-}
-.menu{
-    display: flex;
-}
-.menu li{
-    width: 100px;
-    list-style: none;
-    background: white;
-    position: relative;
-}
-.menu a{
-    color: blue;
-    line-height: 40px;
-}
-.menu ul{
-    display: none;
-    padding:0;
-}
-.menu li:hover ul {
-    display: block;
-}
-.list > a:hover{
-    background: #0289c7;
-    color: white;
-    display: block;
-}
-.list1 > a:hover{
-    background: blue;
-    color: white;
-    display: block;
-    text-decoration: none;
-}
-.list2 > a{
-    background: black;
-    color: white;
-    display: block;
-    text-decoration: none;
-    border-radius: 25%;
-    text-align: center;
-    height: 40px;
-    margin-bottom: 5px;
-}
-#main{
-    background: darkblue;
-    color: white;
-}
-ul.menu1 {
-    display: block;
 }
 .square{
     width: 200px;
@@ -300,27 +252,32 @@ ul.menu1 {
     border-image-source: linear-gradient(to right, #94525c, #14aad7);
     border-image-slice: 1;
 }
-.main, .main1{
+.main{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-li.point > a{
-    text-decoration: none;
-    color: black;
-}
-li.point{
-    display: inline-block;
-    font-size: x-large;
-    padding: 10px;
-    background: linear-gradient(180deg, rgb(254, 255, 252), rgb(157, 189, 111) 100%);
-    box-shadow: 2px 0px 0px 0px  rgba(0, 0, 0, 1), -2px 0px 0px 0px rgba(255, 255, 255, 1) inset;
-    border-top-right-radius: 50%;
-    border-bottom-right-radius: 50%;
-}
 .point1 > a, .point2 > a, .point3 > a, .point4  > a{
     text-decoration: none;
     color: black;
+    position: relative;
+    top: 5px;
+}
+.point1 > a{
+    position: relative;
+    left: 8px;
+}
+.point2 > a{
+    position: relative;
+    left: 17px;
+}
+.point3 > a{
+    position: relative;
+    left: 18px;
+}
+.point4 > a{
+    position: relative;
+    left: 20px;
 }
 .point1, .point2, .point3, .point4 {
     display: inline-block;
@@ -329,28 +286,222 @@ li.point{
     box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 1), -2px 0px 0px 0px rgba(255, 255, 255, 1) inset;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
-    width: 3em;
-    height: 1.5em;
     text-align: center;
-    margin-top: 7px;
     padding-top: 7px;
 }
-.point1>a{
-
+.point5{
+    display: inline-block;
+    background: linear-gradient(180deg, rgb(254, 255, 252), rgb(157, 189, 111) 100%);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 250px;
+    height: 50px;
+    z-index: -4;
+    position: relative;
+    top: 24px;
+    right: 130px;
 }
 .point1{
     width: 60px;
     height: 40px;
-    z-index: 4;
-}
-.point2>a{
-    position: relative;
-    left: 5px;
+    z-index: 1;
 }
 .point2{
-    width: 70px;
+    width: 80px;
     height: 40px;
+    z-index: -1;
     position: relative;
-    left: -22px;
+    right: 25px;
+}
+.point3{
+    width: 80px;
+    height: 40px;
+    z-index: -2;
+    position: relative;
+    right: 58px;
+}
+.point4{
+    width: 100px;
+    height: 40px;
     z-index: -3;
+    position: relative;
+    right: 90px;
+}
+input[name="radio"]{
+    display: none;
+}
+label{
+    display: inline-block;
+    margin: 10px 10px;
+}
+i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+input[type="radio"]+i{
+    border-radius: 50%;
+    border: 2px solid white;
+    background: black;
+    cursor: pointer;
+}
+i:before{
+    content: "";
+    position: absolute;
+    top: 1px; bottom: 1px; left: 1px; right: 1px;
+    border-radius: 50%;
+}
+input[type="radio"]:checked+i:before{
+    background: red;
+}
+.radiodiv{
+    background: url("http://militaryarms.ru/wp-content/uploads/2018/04/kamuflirovannaya-rascvetka.jpg");
+    width: 11.8em;
+}
+.button1{
+    width: 8em;
+    height: 3em;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 25%;
+    border:1px solid darkblue;
+    box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.61);
+}
+.button1:hover{
+    background-color: #ff3207;
+    box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.61) inset;
+}
+.link:hover{
+    color: white;
+}
+.link{
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    top: 0.8em;
+    font-family: "Uni Sans";
+    font-size: large;
+    color: darkblue;
+}
+.menu{
+    display: inline-block;
+    height: 20em;
+}
+.list > a{
+    text-decoration: none;
+    font-weight: lighter;
+    font-style: normal;
+    color: blue;
+    font-size: 20px;
+}
+.list{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu1 > a{
+    color: blue;
+    font-size: large;
+    font-weight: normal;
+    font-style: normal;
+}
+.menu2{
+    display: none;
+}
+.menu:hover .menu2{
+    display: block;
+}
+.menu:hover .menu2 {
+    box-shadow: 1px 2px 23px 2px rgba(0, 0, 0, 0.81);
+    position: relative;
+    height: 160px;
+    width: 150px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.menu:hover .list:hover>a {
+    color: white;
+}
+.menu:hover .menu1 {
+    box-shadow: 1px 2px 23px 2px rgba(0, 0, 0, 0.81);
+}
+.menu:hover .menu1>a {
+    color: black;
+    text-decoration: none;
+}
+.menu:hover .list:hover {
+    background-color: lightblue;
+}
+.menu1{
+    width: 40px;
+    padding: 10px;
+    border-top-right-radius: 10% ;
+    border-top-left-radius: 10% ;
+    height: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.menutwo{
+    display: inline-block;
+    height: 20em;
+}
+.listtwo > a{
+    font-weight: lighter;
+    font-style: normal;
+    color: blue;
+    font-size: 20px;
+}
+.listtwo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu1two > a{
+    color: blue;
+    font-size: large;
+    font-weight: normal;
+    font-style: normal;
+}
+.menu2two{
+    display: none;
+}
+.menutwo:hover .menu2two{
+    display: block;
+}
+.menutwo:hover .menu2two {
+    box-shadow: 1px 2px 23px 2px rgba(0, 0, 0, 0.81);
+    position: relative;
+    height: 160px;
+    width: 150px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.menutwo:hover .listtwo:hover>a {
+    color: white;
+    text-decoration: none;
+}
+.menutwo:hover .menu1two {
+    box-shadow: 1px 2px 23px 2px rgba(0, 0, 0, 0.81);
+}
+.menutwo:hover .menu1two>a {
+    color: black;
+    text-decoration: none;
+}
+.menutwo:hover .listtwo:hover {
+    background-color: blue;
+}
+.menu1two{
+    width: 60px;
+    padding: 10px;
+    border-top-right-radius: 10% ;
+    border-top-left-radius: 10% ;
+    height: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
