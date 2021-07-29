@@ -39,13 +39,11 @@
     top: 10px;
     left: 10px;
 }
-input[type]{
 
-}
-input[type]:focus{
-    -webkit-transform: scaleX(2) scaleY(1.5) translate(250%);
-    -webkit-transition-property: transform;
-    -webkit-transition-duration: 5s;
+input[type=text]:focus{
+    transform: scaleX(2) scaleY(1.5) translate(250%);
+    transition-property: transform;
+    transition-duration: 5s;
 }
 .gradient{
     height: 70px;
@@ -89,8 +87,79 @@ input[type]:focus{
    60% {transform: translateX(100px) translateY(70px) rotate(140deg);}
    80% {transform: translateX(100px) translateY(70px) rotate(270deg);}
    90% {transform: rotate(-90deg);}
+}
+.checkbox{
+    background-color: #820ff7;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    transform: scaleX(0.1);
 
+}
+input[type=checkbox]:checked ~ .checkbox{
+    animation-name: cube;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes cube {
+    0%{transform: scaleX(0.1)}
+    100%{transform: scaleX(1)}
+}
+input[type=checkbox] ~ .checkbox{
+    transform: scaleX(1);
+}
+.square3{
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    transform: translateY(100%) translateX(100%);
+}
+.circle{
+    height: 100px;
+    width: 100px;
+    background-color: #ff3207;
+    border-radius: 50%;
+    animation: around 5s;
+}
+@keyframes around {
+ 20%{transform: translateY(100px)}
+ 40%{transform: translateY(100px)translateX(200px)}
+ 60%{transform: translateY(100px)translateX(200px) translateY(-200px)}
+ 80%{transform: translateY(100px)translateX(200px) translateY(-200px) translateX(-200px)}
+ 100%{transform: translateY(100px)translateX(200px) translateY(-200px) translateX(-200px) translateY(100px)}
+}
+.strip1{
+    height: 20px;
+    width: 20px;
+    border-radius: 25px;
+    background-color: green;
+    position: relative;
+    left: 100px;
+    animation-name: cubic;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(.94,.06,.83,.67);
+}
+@keyframes cubic {
+    0%{left: 100px;}
+    20%{left: 140px;}
+    40%{left: 180px;}
+    60%{left: 200px;}
+    70%{left: 0px;}
+    80%{left: 100px;}
+}
 
-
-
+.strip{
+    height: 20px;
+    width: 200px;
+    border-radius: 25px;
+    background-color: #ff3207;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+.background{
+    height: 50px;
+    width: 250px;
+    background-color: black;
 }
