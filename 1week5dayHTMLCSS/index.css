@@ -1,0 +1,507 @@
+#square{
+    width: 10em;
+    height: 10em;
+    background-color: blue;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+}
+#circle{
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    background: aqua;
+    border: 13px double black;
+}
+table{
+    border-spacing: 2px ;
+    width: 30em;
+    height: 20em;
+}
+thead{
+    text-align: left;
+}
+tbody{
+    text-align: center;
+}
+
+th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-indent: 10px;
+    height:  50px;
+    background-color: blue;
+    color: white;
+    font-size: 23px;
+    font-weight: lighter;
+}
+#angle1{
+    border-radius: 10% 0% 0% 0% ;
+}
+#angle2{
+    border-radius: 0% 10% 0% 0%;
+}
+#angle3{
+    border-radius: 0% 0% 0% 10%;
+}
+#angle4{
+    border-radius: 0% 0% 10% 0%;
+}
+td {
+    border: 1px solid black;
+    height: 50px;
+    background-color: orange;
+    font-size: x-large;
+    font-weight: bold;
+}
+p {
+    font-size: x-large;
+    font-style: italic;
+    font-weight: bold;
+}
+sub{
+    color: blue;
+    font-style: normal;
+    font-size: small;
+}
+sup{
+    color: red;
+    font-style: normal;
+    font-size: small;
+}
+.text{
+    width: 100%;
+    background-color: #993430;
+    height: 70px;
+}
+#text1 {
+    font-size: xx-large;
+    text-decoration: underline;
+    color: red;
+    font-style: italic;
+    padding-left: 20px;
+}
+#text2{
+    text-decoration: underline;
+    font-size: xx-large;
+    color: greenyellow;
+    font-style: italic;
+    padding: 20px;
+}
+#text3{
+    text-decoration: underline;
+    font-size: xx-large;
+    color: aqua;
+    font-style: italic;
+}
+#circle1{
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    background: darkseagreen;
+    border: 30px solid green;
+    border-bottom-color: red;
+    line-height: 50px;
+    text-align: center;
+}
+#circletext, #circlepercent {
+    font-size: 25px;
+    font-weight: bold;
+    color: green;
+}
+#circletext1, #circlepercent1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+.form1 > h1{
+    font-weight: lighter;
+    font-size: 27px;
+    padding-left: 12px;
+    margin-bottom: 5px;
+    padding-top: 15px;
+}
+.form1 > hr{
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.form1{
+    font-family: Tahoma;
+    background: #e0e2e3;
+    height: 630px;
+    width: 650px;
+    border-radius: 1%;
+}
+.group{
+    padding: 12px;
+}
+label[for="formbutton1"]{
+    margin-right: 10px;
+    margin-left: 12em;
+    font-size: 15px;
+}
+label[for="formbutton2"]{
+    margin-right: 10px;
+    margin-left: 11em;
+    font-size: 15px;
+}
+label[for="formbutton3"]{
+    margin-right: 10px;
+    margin-left: 10.5em;
+    font-size: 15px;
+}
+label[for="formbutton4"]{
+    margin-right: 10px;
+    margin-left: 7em;
+    font-size: 15px;
+}
+label[for="formbutton5"]{
+    margin-left: 5.5em;
+    margin-right: 15px;
+    font-size: 15px;
+}
+#mail{
+    margin-left: 11em;
+    font-size: 15px;
+}
+label[for="formbutton6"]{
+     margin-right: 10px;
+     margin-left: 4em;
+     font-size: 15px;
+}
+input[type="email"],[type="password"], [type="text"]{
+    height: 22px;
+    border-radius: 10%;
+    border-width: thin;
+    border-color: lightgray;
+}
+#mail1{
+    margin-left: 5em;
+    font-size: 15px;
+}
+#field{
+    font-size: 15px;
+    margin-left: 5em;
+    margin-top: 1.8em;
+}
+#button1{
+    margin-left: 18em;
+    margin-right: 10px;
+    background-color: #0289c7;
+    color: #e0e2e3;
+    border-color: #0289c7;
+    height: 30px;
+    border-radius: 10%;
+}
+#button2 {
+    border-color: lightgray;
+    height: 30px;
+    border-radius: 10%;
+}
+.square{
+    width: 200px;
+    height: 100px;
+    background: white;
+    border: solid 1px black;
+}
+.circle{
+    width: 65px;
+    height: 65px;
+    position: relative;
+    color: red;
+    left: 64px;
+    top: 18px;
+    background: #ff3207;
+    border-radius: 50%;
+}
+.flag{
+    width: 200px;
+    height: 100px;
+    border: solid 1px black;
+}
+.gradient{
+    height: 100%;
+    background: linear-gradient(to top, red 33.3%,blue 33.3%,blue 66.6%,white 66.6%);
+}
+.item{
+    height: 225px;
+    width: 650px;
+    box-shadow: 4px 4px 9px 3px rgba(5, 11, 15, 0.99);
+}
+#menuitem{
+    list-style: none;
+    padding: 20px;
+}
+#menuitem1{
+    padding: 10px;
+    font-weight: bold;
+    font-size: x-large;
+}
+#button{
+    height: 100px;
+    width: 200px;
+    font-size: xx-large;
+    font-weight: bold;
+    border-radius: 10%;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 1) inset;
+}
+.square1 {
+    height: 100px;
+    width: 100px;
+    border: 10px solid;
+    border-image-source: linear-gradient(to right, #94525c, #14aad7);
+    border-image-slice: 1;
+}
+.main{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.point1 > a, .point2 > a, .point3 > a, .point4  > a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    top: 5px;
+}
+.point1 > a{
+    position: relative;
+    left: 8px;
+}
+.point2 > a{
+    position: relative;
+    left: 17px;
+}
+.point3 > a{
+    position: relative;
+    left: 18px;
+}
+.point4 > a{
+    position: relative;
+    left: 20px;
+}
+.point1, .point2, .point3, .point4 {
+    display: inline-block;
+    font-size: large;
+    background: linear-gradient(180deg, rgb(254, 255, 252), rgb(157, 189, 111) 100%);
+    box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 1), -2px 0px 0px 0px rgba(255, 255, 255, 1) inset;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    text-align: center;
+    padding-top: 7px;
+}
+.point5{
+    display: inline-block;
+    background: linear-gradient(180deg, rgb(254, 255, 252), rgb(157, 189, 111) 100%);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 250px;
+    height: 50px;
+    z-index: -4;
+    position: relative;
+    top: 24px;
+    right: 130px;
+}
+.point1{
+    width: 60px;
+    height: 40px;
+    z-index: 1;
+}
+.point2{
+    width: 80px;
+    height: 40px;
+    z-index: -1;
+    position: relative;
+    right: 25px;
+}
+.point3{
+    width: 80px;
+    height: 40px;
+    z-index: -2;
+    position: relative;
+    right: 58px;
+}
+.point4{
+    width: 100px;
+    height: 40px;
+    z-index: -3;
+    position: relative;
+    right: 90px;
+}
+input[name="radio"]{
+    display: none;
+}
+label{
+    display: inline-block;
+    margin: 10px 10px;
+}
+i{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1px solid black;
+    position: relative;
+}
+input[type="radio"]+i{
+    border-radius: 50%;
+    border: 2px solid white;
+    background: black;
+    cursor: pointer;
+}
+i:before{
+    content: "";
+    position: absolute;
+    top: 1px; bottom: 1px; left: 1px; right: 1px;
+    border-radius: 50%;
+}
+input[type="radio"]:checked+i:before{
+    background: red;
+}
+.radiodiv{
+    background: url("http://militaryarms.ru/wp-content/uploads/2018/04/kamuflirovannaya-rascvetka.jpg");
+    width: 11.8em;
+}
+.button1{
+    width: 8em;
+    height: 3em;
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 25%;
+    border:1px solid darkblue;
+    box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.61);
+}
+.button1:hover{
+    background-color: #ff3207;
+    box-shadow: 4px 3px 6px 0px rgba(0, 0, 0, 0.61) inset;
+}
+.link:hover{
+    color: white;
+}
+.link{
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    top: 0.8em;
+    font-family: "Uni Sans";
+    font-size: large;
+    color: darkblue;
+}
+.menu{
+    display: inline-block;
+    height: 20em;
+}
+.list > a{
+    text-decoration: none;
+    font-weight: lighter;
+    font-style: normal;
+    color: blue;
+    font-size: 20px;
+}
+.list{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu1 > a{
+    color: blue;
+    font-size: large;
+    font-weight: normal;
+    font-style: normal;
+}
+.menu2{
+    display: none;
+}
+.menu:hover .menu2{
+    display: block;
+}
+.menu:hover .menu2 {
+    box-shadow: 1px 2px 23px 2px rgba(0, 0, 0, 0.81);
+    position: relative;
+    height: 160px;
+    width: 150px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.menu:hover .list:hover>a {
+    color: white;
+}
+.menu:hover .menu1 {
+    box-shadow: 1px 2px 23px 2px rgba(0, 0, 0, 0.81);
+}
+.menu:hover .menu1>a {
+    color: black;
+    text-decoration: none;
+}
+.menu:hover .list:hover {
+    background-color: lightblue;
+}
+.menu1{
+    width: 40px;
+    padding: 10px;
+    border-top-right-radius: 10% ;
+    border-top-left-radius: 10% ;
+    height: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+.menutwo{
+    display: inline-block;
+    height: 20em;
+}
+.listtwo > a{
+    font-weight: lighter;
+    font-style: normal;
+    color: blue;
+    font-size: 20px;
+}
+.listtwo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu1two > a{
+    color: blue;
+    font-size: large;
+    font-weight: normal;
+    font-style: normal;
+}
+.menu2two{
+    display: none;
+}
+.menutwo:hover .menu2two{
+    display: block;
+}
+.menutwo:hover .menu2two {
+    box-shadow: 1px 2px 23px 2px rgba(0, 0, 0, 0.81);
+    position: relative;
+    height: 160px;
+    width: 150px;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.menutwo:hover .listtwo:hover>a {
+    color: white;
+    text-decoration: none;
+}
+.menutwo:hover .menu1two {
+    box-shadow: 1px 2px 23px 2px rgba(0, 0, 0, 0.81);
+}
+.menutwo:hover .menu1two>a {
+    color: black;
+    text-decoration: none;
+}
+.menutwo:hover .listtwo:hover {
+    background-color: blue;
+}
+.menu1two{
+    width: 60px;
+    padding: 10px;
+    border-top-right-radius: 10% ;
+    border-top-left-radius: 10% ;
+    height: 30px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
