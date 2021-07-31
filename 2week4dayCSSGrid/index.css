@@ -78,3 +78,62 @@
     height: 50%;
     width: 80%;
 }
+.maingenerate{
+    display: grid;
+    grid-row-gap: 10px;
+    background: #e5e5e5;
+}
+.main{
+    display: grid;
+    grid-template-columns: 1.2fr 0.6fr 1fr;
+    grid-template-rows: 150px;
+    grid-column-gap: 10px;
+    margin: 10px 10px 0 10px;
+}
+.layout{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: xxx-large;
+    font-weight: bold;
+    font-family: Arial;
+    color: #5d5d5d;
+    background: #d8d8d8;
+}
+.main1{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    margin: 0 0 10px 10px;
+}
+.mainlayout{
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-row-gap: 10px;
+    width: 98%;
+}
+.layout1{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    font-size: xxx-large;
+    font-weight: bold;
+    font-family: Arial;
+    color: #5d5d5d;
+    background: #d8d8d8;
+}
+.mainlayout1{
+    display: grid;
+    margin: 0 20px 0 0;
+    justify-items: center;
+    align-items: center;
+    font-size: xxx-large;
+    font-weight: bold;
+    font-family: Arial;
+    color: #5d5d5d;
+    background: #d8d8d8;
+}
+.main>div, .main1>div.mainlayout1,.mainlayout > .layout1 {
+    border: 1px solid darkgray;
+
+}
