@@ -41,3 +41,40 @@
 .container1{
     grid-column: 2/2;
 }
+.mainmenu{
+    display: grid;
+    height: 60px;
+    width: 50%;
+    background-color: #f2f2f2;
+    grid-template-columns: 30% 50% 20%;
+}
+.logo{
+    display: grid;
+    align-self: center;
+    justify-self: start;
+    font-family: Helvetica;
+    font-size: large;
+    font-weight: bold;
+    color: #0552d5;
+    padding-left: 10px;
+}
+.navigation{
+    display: grid;
+    grid-template-columns: 20% 18% 27% 25%  ;
+    justify-self: end;
+    align-self: center;
+    grid-gap: 5px;
+    color: #878787;
+}
+.signup{
+    display: grid;
+    justify-self: center;
+    justify-items: center;
+    align-self: center;
+    align-items: center;
+    background: #407fe6;
+    color: white;
+    border-radius: 5px;
+    height: 50%;
+    width: 80%;
+}
