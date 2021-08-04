@@ -1,62 +1,66 @@
-const money = 120000
+// function show (num) {
+//     console.log(arguments)
+// }
+// show(1,3,4,5,6,4)
 
-const obj = {
-    name: "Dmitriy",
-    money,
-}
-
-obj["name-$*long"] = "Dmitriy Zolotukhin"
-obj.newKey = 123
-
-// console.log({obj})
-// console.log(obj.money)
-
-obj.money = 123
-
-
-// console.log("value:", obj.testKey)
+// function comparison (numOne, numTwo){
+//     if (numOne > numTwo){
+//         return 1
+//     } else if (numOne < numTwo){
+//         return -1
+//     } else if (numOne === numTwo){
+//         return 0
+//     }
+// }
 //
-// if (obj.test === undefined){
-//     console.log("It is undefined")
+// let resultComparison = comparison(3,2)
+//
+// console.log(resultComparison)
+
+// let sumNum = (numOne, numTwo) => numOne + numTwo
+//
+// console.log(sumNum(4,2))
+//
+//
+// let sumNum1 = (numOne1, numTwo1) => numOne1 - numTwo1
+//
+// console.log(sumNum1(6,5))
+//
+//
+// let sumNum2 = (numOne2, numTwo2) => numOne2 * numTwo2
+//
+// console.log(sumNum2(6,5))
+//
+//
+// let sumNum3 = (numOne3, numTwo3) => numOne3 / numTwo3
+//
+// console.log(sumNum3(9,3))
+
+// function greeting (name="гость"){
+//    console.log("Здравствуйте, " + name)
 // }
-
-// console.log("test" in obj)
-
-// for (let key in obj) {
-//     console.log("key:", key, "value:", obj[key])
+// greeting("Arman")
+//
+//
+// function fib (n) {
+//     if (n < 2){
+//         return n
+//     } else {
+//         return fib(n-1) + fib(n-2)
+//     }
 // }
+// console.log(fib(5))
 
-const newObj = {}
+function fib (n) {
+    let a = 1
+    let b = 1
 
-for (let key in obj) {
-    newObj[key] = obj[key]
+    for (let i = 3; i <= n; i++)
+    {
+        let c = a + b
+        a = b
+        b = c
+    }
+    return b
 }
-
-newObj.money = 0
-
-newObj.KeyMoney = 1000000
-
-newObj.newTestKeyAfterCopy = "new value"
-
-obj.keyMoney = 9999999
-
-// console.log({obj, newObj})
-
-// console.log(obj)
-// console.log({obj})
-// console.log({...obj})
-// console.log({name: obj.name, money: obj.money })
-
-const newSpreadObj = {...obj, newKey1: 123, name: "new Name"}
-
-console.log({newSpreadObj})
-// newSpreadObj.name = "new external name"
-
-// console.log({obj, newObj, newSpreadObj})
-
-
-// const result = JSON.stringify(obj)
-const resultObj = JSON.parse(JSON.stringify(obj))
-
-console.log(resultObj.name)
-console.log({obj})
+console.log(fib(5))
