@@ -1,0 +1,65 @@
+.container{
+    width: 500px;
+    height: 200px;
+}
+
+a:focus{
+    /*font-size: 50px;*/
+}
+
+
+a:first-child{
+    font-size: 50px;
+}
+a:nth-child(2n){
+    background-color: yellow;
+}
+a:nth-child(2n+1){
+    background-color: green;
+}
+a:nth-child(3){
+    background-color: blue;
+}
+
+
+
+
+li:first-child{
+    background-color: red;
+    color: blue;
+}
+li:last-child{
+    background-color: yellow;
+    font-size: 50px;
+}
+a::after{
+    content: "→";
+}
+a::before{
+    content: "♥";
+}
+
+input{
+    font-size: 30px;
+}
+
+::placeholder{
+    color: blue;
+}
+::-webkit-scrollbar{
+    width: 35px;
+    height: 10px;
+    background-color: red;
+}
+::-webkit-scrollbar-thumb{
+    background-color: black;
+
+}
+::-webkit-scrollbar-track{
+    /*background-color: green;*/
+}
+.container:hover.button{
+    height: 88%;
+}
+
+

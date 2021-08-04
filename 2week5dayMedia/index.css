@@ -1,0 +1,84 @@
+.generate{
+    display: grid;
+    height: 1000px;
+    grid-template-rows: 5% 30% 20% 10%;
+}
+.level1{
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.level1 > .level1header{
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.level1 > .level1menu{
+    background-color: #ef3d4d;
+    color: white;
+    font-family: Arial;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.level2{
+    display: grid;
+    background-color: #4c86c6;
+    color: white;
+    font-family: Arial;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.level3{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.level3main{
+    display: grid;
+    background-color: #24344b;
+    color: white;
+    font-family: Arial;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.level3imageextraparent{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.level3imageextrachild{
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-column: 2/3;
+}
+.level3image{
+    display: grid;
+    background-color: #c1e4e6;
+    color: black;
+    font-family: Arial;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.level3extra{
+    display: grid;
+    background-color: #4dbd97;
+    color: black;
+    font-family: Arial;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.level4{
+    display: grid;
+    background-color: #ffd169;
+    color: black;
+    font-family: Arial;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 100%;
+}
