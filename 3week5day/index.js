@@ -102,4 +102,64 @@
 // console.log(searchElement)
 //
 
+// const assignmentNum = document.querySelector(`#check`)
+//
+// let counter = 0
+//
+// assignmentNum.textContent = counter
+//
+// assignmentNum.addEventListener(`click`, () => {
+//     counter++
+//     assignmentNum.textContent = counter
+// })
+// function alertScroll(){
+//     alert(document.documentElement.scrollTop)
+// }
+// /
+// window.addEventListener(`scroll`, alertScroll)
+
+// const searchCell = document.getElementsByTagName(`td`)
+// console.log(searchCell)
+// searchCell[0].addEventListener(`click`, () =>{
+//     const searchNum =  document.querySelector(`td`)
+//     const translationNum = Number(searchNum.textContent)
+//     const result = translationNum * translationNum
+//     console.log(result)
+// })
+// searchCell[1].addEventListener(`click`, () =>{
+//     const searchNum =  document.querySelector(`.one`)
+//     const translationNum = Number(searchNum.textContent)
+//     const result = translationNum * translationNum
+//     console.log(result)
+// })
+// searchCell[2].addEventListener(`click`, () =>{
+//     const searchNum =  document.querySelector(`.two`)
+//     const translationNum = Number(searchNum.textContent)
+//     const result = translationNum * translationNum
+//     console.log(result)
+// })
+// searchCell[3].addEventListener(`click`, () =>{
+//     const searchNum =  document.querySelector(`.three`)
+//     const translationNum = Number(searchNum.textContent)
+//     const result = translationNum * translationNum
+//     console.log(result)
+// })
+// searchCell[4].addEventListener(`click`, () =>{
+//     const searchNum =  document.querySelector(`.four`)
+//     const translationNum = Number(searchNum.textContent)
+//     const result = translationNum * translationNum
+//     console.log(result)
+// })
+// searchCell[5].addEventListener(`click`, () =>{
+//     const searchNum =  document.querySelector(`.five`)
+//     const translationNum = Number(searchNum.textContent)
+//     const result = translationNum * translationNum
+//     console.log(result)
+// })
+
+const searchTable = document.querySelector(`#fivePowCol`)
+    searchTable.addEventListener(`mouseover`,() =>{
+        const searchTd = document.getElementsByTagName(`td`)
+        searchTd.style.backgroundColor = `red`
+    })
 
