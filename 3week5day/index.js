@@ -91,3 +91,15 @@
 // }
 //
 // getParamSpan({textElementContentText},{textElementContentInner})
+
+// const searchChildElement = document.querySelector(`div > .child`)
+// searchChildElement.style.color = `red`
+
+// const searchElement = document.querySelector(`.list`)
+// const childElement = searchElement.lastElementChild
+// const signLastChild = `!!!`
+// const addTextLastChild = childElement.append(signLastChild)
+// console.log(searchElement)
+//
+
+
