@@ -116,8 +116,8 @@
 //     alert(document.documentElement.scrollTop)
 // }
 // /
-// window.addEventListener(`scroll`, alertScroll)
-
+// // window.addEventListener(`scroll`, alertScroll)
+//
 // const searchCell = document.getElementsByTagName(`td`)
 // console.log(searchCell)
 // searchCell[0].addEventListener(`click`, () =>{
@@ -156,10 +156,42 @@
 //     const result = translationNum * translationNum
 //     console.log(result)
 // })
+//
+// const searchTable = document.querySelector(`#fivePowCol`)
+//     searchTable.addEventListener(`mouseover`, function (event) {
+//        if (event.target.tagName == `TD`){
+//            event.target.style.backgroundColor = `red`
+//        }
+//     })
 
-const searchTable = document.querySelector(`#fivePowCol`)
-    searchTable.addEventListener(`mouseover`,() =>{
-        const searchTd = document.getElementsByTagName(`td`)
-        searchTd.style.backgroundColor = `red`
+// const searchInput = document.getElementsByTagName(`input`)
+// const searchSpan = document.getElementById(`valid`)
+//     searchInput[0].addEventListener(`blur`,() => {
+//         // console.log(searchSpan.textContent)
+//         if (searchInput[0].value.includes(searchSpan.innerText)){
+//             console.log(`great`)
+//         } else {
+//             console.log(`bad`)
+//         }
+//     })
+
+// const searchForm = document.getElementById(`formInput`)
+//     searchForm.addEventListener(`focus`, function (e){
+//     if (e.target.className === `inputForm`){
+//         document.querySelector(`.inputForm`).style.cssText = `color: red,
+//         width: 500px`
+//     }
+// })
+
+// const deleteButton = document.getElementById(`delete`)
+//     deleteButton.addEventListener(`click`, () => {
+//         deleteButton.remove()
+//     })
+
+const searchOl = document.getElementById(`deleteOl`)
+    searchOl.addEventListener(`click`, function (event){
+        if (event.target.className === `deleteLi`){
+           const deleteLi = document.querySelector(`.deleteLi`)
+               deleteLi.remove()
+        }
     })
-
