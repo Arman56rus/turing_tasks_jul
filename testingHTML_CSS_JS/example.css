@@ -1,0 +1,35 @@
+.container_cell, .container_tr_heading{
+    background-color: blanchedalmond;
+    min-height: 50px;
+    padding: 0 10px 0 10px;
+    color: chocolate;
+}
+.tooltip{
+    color: chocolate;
+}
+.container_name{
+    background-color: burlywood;
+    color: white;
+}
+.container_table,.container_name{
+    border: 1px solid black;
+}
+.container_table{
+    border-top: none;
+}
+td > .input_number, td > .input_name,select {
+    border: none;
+    font-size: smaller;
+    font-weight: bold;
+    font-family: Nunito;
+}
+.addRow{
+    margin: 20px  0 0 15px;
+    background-color: #deb887;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: Nunito;
+    font-weight: bold;
+}

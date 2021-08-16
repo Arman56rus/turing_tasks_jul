@@ -1,0 +1,67 @@
+@import url(example.css) screen and (max-width: 768px);
+.container {
+    margin: 4em  1em 0 1em;
+}
+.container_table{
+    width: 100%;
+}
+.container_name{
+    background-color: #0289c7;
+    color: white;
+    font-weight: bold;
+    font-family: Nunito;
+    font-size: large;
+    padding: 15px 0 15px 0;
+}
+.container_tr_heading{
+    color: white;
+    font-weight: bold;
+}
+.tooltip{
+    cursor: pointer;
+    position: absolute;
+    right: 1px;
+    width: 99px;
+    background: none;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+.tooltip::before{
+    position: absolute;
+    content: "Данная кнопка не влияет на пользователя";
+    left: 0;
+    bottom: 100%;
+    font-size: smaller;
+    background-color: green;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    visibility: hidden;
+}
+.tooltip:focus::before{
+    visibility: visible;
+}
+.container_cell, .container_tr_heading{
+    background-color: #0289c7;
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr 0.02fr 50px;
+    align-items: center;
+}
+td{
+    display: grid;
+    justify-items: center;
+}
+.input_name, .input_number{
+    width: 99%;
+}
+.addRow{
+    margin: 20px  0 0 15px;
+    border: none;
+    background-color: #0289c7;
+    color: white;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+    font-family: Nunito;
+    font-weight: bold;
+}
