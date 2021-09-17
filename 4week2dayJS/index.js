@@ -127,7 +127,7 @@ class WorkingDOM {
     }
     addHTMLstart(){
         this.selector = document.querySelector('.javascript')
-        this.selector.prependChild(document.createElement('div').innerHTML='Hi, ')
+        this.selector.prepend(document.createElement('div').innerHTML='Hi, ')
         return this
     }
     addHTMLend(){
