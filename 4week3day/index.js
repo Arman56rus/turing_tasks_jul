@@ -19,40 +19,32 @@
 //         () => searchShowSec.innerHTML = getSecondsToTomorrow(),1000
 //     )
 
-// let searchInput = document.getElementById(`addNum`)
-// let searchButton = document.getElementById(`startTimer`)
-//     let getValue = searchInput.value
-//     let intervalFunction = () => {
-//         if (getValue === 0) {
-//             clearInterval(getValue)
-//         }
-//         return getValue--;
-//     }
-//   let funcForAddEvent = () => {
-//     setInterval(intervalFunction,1000)
-// }
-//
-//
-// searchButton.addEventListener(`click`, funcForAddEvent)
-//Не разобрался, как реализовать это задание
-//
-// function returnNumber(numFirst, numSecond){
-//     return Math.floor(Math.random() * (numSecond - numFirst) + numFirst)
-// }
-// console.log(returnNumber(2,10))
+let input = document.getElementById('time');
+let show = document.getElementById('timer');
 
-// let textBefore = `The text before promise`
-// console.log(textBefore)
-//
-// let textAfter = new Promise(function (resolve,reject){
-//     setTimeout(() => {
-//         resolve(textBefore = `The text after promise`)
-//     },3000)
-// })
-//
-// textAfter.then(function (){
-//     console.log(textBefore)
-// })
+function sec() {
+    let seconds = input.value
+    const timer = setInterval(() => {
+        seconds -= 1;
+        if (seconds < 1) {
+            show.innerHTML = 'Время истекло!';
+            clearInterval(timer)
+        } else {
+            show.innerHTML = seconds;
+        }
+    }, 1000);
+}
+
+let textBefore = `The text before promise`
+console.log(textBefore)
+
+let textAfter = new Promise(function (resolve,reject){
+    setTimeout(() => {
+        resolve(textBefore = `The text after promise`)
+    },3000)
+})
+
+textAfter.then(console.log)
 
 // let numBefore = 2
 // console.log(numBefore)
@@ -83,71 +75,59 @@
 //     .then(console.log)
 //     .catch(console.log)
 
-// let numArray = [2,3,4,5,6,7,8,9]
-//
-// function showEvenNumbers (){
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() =>{
-//             reject({newNumArray: numArray.filter(x => x%2 === 0)})
-//         },1000)
-//     })
-// }
-// showEvenNumbers().catch(console.log)
-//
-// function showSumNumbers (){
-//     return new Promise((resolve, reject) => {
-//         setTimeout(() => {
-//             reject({newNumArray: numArray.reduce((total, value)=>{
-//                 return total+value
-//             },0)
-//         })
-//     },3000)
-// })
-//
-// }
-// showSumNumbers().catch(console.log)
+let numArray = [2,3,4,5,6,7,8,9]
 
-// let numArray = [2,3,4,5,6,7,8,9]
+function showEvenNumbers (){
+    return new Promise((resolve, reject) => {
+        setTimeout(() =>{
+            reject({newNumArray: numArray.filter(x => x%2 === 0)})
+        },1000)
+    })
+}
 
-// async function showEvenNumbers (){
-//     return await new Promise((resolve, reject) => () => {
-//         reject({
-//             newNumArray: numArray.filter(x => x % 2 === 0)
-//         })
-//     })
-// }
-//
-// async function showSumNumbers (){
-//     return await new Promise((resolve, reject) => () => {
-//         reject({
-//             newNumArray: numArray.reduce((total, value) => {
-//                 return total + value
-//             })
-//         })
-//     })
-// }
-// async function go(){
-//     let a = await showEvenNumbers()
-//     console.log(a)
-//     let b = await showSumNumbers()
-//     console.log(b)
-// }
-// go().then()
-// Не удалось верно решить это задание
+function showSumNumbers (){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            reject({newNumArray: numArray.reduce((total, value)=>{
+                return total+value
+            },0)
+        })
+    },3000)
+})
 
-// let isError = false
-//
-// const somePromise = new Promise((resolve, reject) => {
-//     if (isError === true){
-//         resolve({resultNum: 123})
-//     } else {
-//         reject({errorText: `new error append`})
-//     }
-// })
-// somePromise
-//     .then(result => console.log(`result: `, result))
-//     .catch(error => console.log(`error handled: `, error))
-//     .finally(final => console.log(`finally data: `, final))
+}
+showEvenNumbers().catch(showSumNumbers).catch(console.log)
+
+let arr = [2,3,4,5,6,7,8,9]
+
+async function first(arr) {
+    const arrPositiveNumbers = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (i % 2 !== 0) {
+            arrPositiveNumbers.push(arr[i]);
+        }
+    }
+    return arrPositiveNumbers
+
+}
+async function second(arrPositiveNumbers) {
+    let sumNumbers = 0;
+    for (let i = 0; i < arrPositiveNumbers.length; i++) {
+        sumNumbers += arrPositiveNumbers[i];
+    }
+    return sumNumbers
+}
+async function func() {
+    const firstRes = await first(arr);
+    const result = await second(firstRes);
+    console.log(result)
+}()
+go().then()
+
+let promise = new Promise((resolve, reject) => {
+    setTimeout(() => reject(new Error("Ошибка!")), 1000);
+})
+promise.catch(console.log)
 
 let promiseArray = Promise.all([
     new Promise(resolve => setTimeout(()=>resolve(3),3000)),
