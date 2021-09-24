@@ -1,23 +1,23 @@
-// let searchTime = document.getElementById(`time`)
-// function  getCurrentTimeString(){
-//     return new Date().toTimeString().replace(/ .*/, ``)
-// }
-// setInterval(
-//     () => searchTime.innerHTML = getCurrentTimeString(),1000
-// )
-//
-// let searchShowSec = document.getElementById(`showSecond`)
-// function getSecondsToTomorrow() {
-//     let now = new Date();
-//
-//     let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
-//
-//     let diff = tomorrow - now;
-//     return Math.round(diff/1000)}
-//
-// setInterval(
-//         () => searchShowSec.innerHTML = getSecondsToTomorrow(),1000
-//     )
+let searchTime = document.getElementById(`time`)
+function  getCurrentTimeString(){
+    return new Date().toTimeString().replace(/ .*/, ``)
+}
+setInterval(
+    () => searchTime.innerHTML = getCurrentTimeString(),1000
+)
+
+let searchShowSec = document.getElementById(`showSecond`)
+function getSecondsToTomorrow() {
+    let now = new Date();
+
+    let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
+
+    let diff = tomorrow - now;
+    return Math.round(diff/1000)}
+
+setInterval(
+        () => searchShowSec.innerHTML = getSecondsToTomorrow(),1000
+    )
 
 let input = document.getElementById('time');
 let show = document.getElementById('timer');
@@ -46,34 +46,34 @@ let textAfter = new Promise(function (resolve,reject){
 
 textAfter.then(console.log)
 
-// let numBefore = 2
-// console.log(numBefore)
-//
-// let numAfter = new Promise(function (resolve,reject){
-//     setTimeout(() => {
-//         reject(numBefore = 3)
-//     },3000)
-// })
-//
-// numAfter.then(function (){
-//     console.log(numBefore)
-// })
+let numBefore = 2
+console.log(numBefore)
 
-// let num = Math.floor(Math.random()*20)
-//
-// // console.log(num)
-// function containPromise(){
-//     return new Promise((resolve, reject) => {
-//         if (num > 10) {
-//             reject({Error: `number more than 10 `})
-//         } else {
-//             resolve({Message: `number smaller than 10`})
-//         }
-//     })
-// }
-// containPromise()
-//     .then(console.log)
-//     .catch(console.log)
+let numAfter = new Promise(function (resolve,reject){
+    setTimeout(() => {
+        reject(numBefore = 3)
+    },3000)
+})
+
+numAfter.then(function (){
+    console.log(numBefore)
+})
+
+let num = Math.floor(Math.random()*20)
+
+// console.log(num)
+function containPromise(){
+    return new Promise((resolve, reject) => {
+        if (num > 10) {
+            reject({Error: `number more than 10 `})
+        } else {
+            resolve({Message: `number smaller than 10`})
+        }
+    })
+}
+containPromise()
+    .then(console.log)
+    .catch(console.log)
 
 let numArray = [2,3,4,5,6,7,8,9]
 
